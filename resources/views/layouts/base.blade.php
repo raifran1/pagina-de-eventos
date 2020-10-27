@@ -32,6 +32,9 @@
                             <li class="nav-item">
                                 <a href="{{ route('my_events') }}" class="nav-link">Meus eventos</a>
                             </li>
+                            <li class="nav-item">
+                                <a href="{{ route('events_relatorios') }}" class="nav-link">Relatórios</a>
+                            </li>
                         @endguest
                         <li class="nav-item">
                             <a href="{{ route('cadastro_evento_get') }}" class="nav-link">Criar Evento</a>
@@ -88,5 +91,8 @@
         </footer>
         <!-- Footer -->
     </body>
+    {{-- Jquery|AJAX --}}
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
     @yield('ext_script')
 </html>

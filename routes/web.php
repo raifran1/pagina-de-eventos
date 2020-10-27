@@ -32,6 +32,9 @@ Route::post('/events/post/create-edit', [EventController::class, 'store'])->midd
 Route::get('/events/{event}/edit/', [EventController::class, 'edit'])->middleware(('auth'))->name('editar_evento_get');
 Route::post('/events/{event}/edit/', [EventController::class, 'edit'])->middleware(('auth'))->name('editar_evento_post');
 
+// Endpoint gerar relatório
+Route::get('/events/relatorio/', [EventController::class, 'relatorios'])->middleware(('auth'))->name('events_relatorios');
+
 // Rota da tela de deletar
 Route::get('/events/{id}/delete/', [EventController::class, 'delete'])->middleware(('auth'))->name('deletar_evento_get');
 

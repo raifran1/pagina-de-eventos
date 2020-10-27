@@ -85,5 +85,10 @@ class EventController extends Controller
         return redirect()->route('my_events')
                         ->with('success','O evento cadastrado foi deletado com sucesso');
     }
+
+     // (Relatórios) 
+     public function relatorios(){
+        return view('events.relatorio');
+    }
 }
 
