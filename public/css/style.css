@@ -1,0 +1,21 @@
+* {
+    font-family: 'Roboto';
+}
+
+.navbar {
+    background-color: #e3f2fd;
+}
+
+.page-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #e3f2fd;
+    color: #000;
+    text-align: center;
+}
+
+.container {
+    margin-top: 20px;
+}
